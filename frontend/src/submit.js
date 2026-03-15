@@ -16,7 +16,7 @@ export const SubmitButton = () => {
             const formData = new FormData();
             formData.append('pipeline', JSON.stringify({ nodes, edges }));
             
-            const response = await fetch('http://localhost:8000/pipelines/parse', {
+            const response = await fetch('https://pipe-line-3.onrender.com/pipelines/parse', {
                 method: 'POST',
                 body: formData,
             });
